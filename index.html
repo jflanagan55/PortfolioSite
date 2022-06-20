@@ -6,39 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.4/css/bulma.min.css" integrity="sha512-HqxHUkJM0SYcbvxUw5P60SzdOTy/QVwA1JJrvaXJv4q7lmbDZCmZaqz01UPOaQveoxfYRv1tHozWGPMcuTBuvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <script src="index.js" defer></script>
     <title>Portfolio Site</title>
 </head>
 <body>
-    <header>
-        <nav  class="navbar is-justify-content-space-between p-4 has-background-dark" >
+        <nav  class="navbar is-justify-content-space-between p-4 has-background-light" id="navbar">
             <div class="navbar-brand is-align-items-center">
-                <h1 class="title is-4 has-text-white">Justin Flanagan</h1>
+                <h1 class="title is-4 has-text-black mb-0 pl-4">Justin Flanagan</h1>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" id="trigger-hamburger">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                  </a>
             </div>
-            <div class="navbar-menu is-active">
+            <div class="navbar-menu" id="navbar-menu">
                 <div class="navbar-end">
-                    <a class="navbar-item has-text-white" href="#about">About</a>
-                    <a class="navbar-item has-text-white" href="#projects">Projects</a>
-                    <a class="navbar-item has-text-white" href="#contact">Contact</a>
+                    <a class="navbar-item has-text-black has-text-centered" href="#about" id="about-btn">About</a>
+                    <a class="navbar-item has-text-black has-text-centered" href="#projects" id="projects-btn">Projects</a>
+                    <a class="navbar-item has-text-black has-text-centered" href="#contact" id="contact-btn">Contact</a>
                 </div>
                 </div>
             </div>
         </nav>
-    </header>
+
     <main>
-        <section id="about" class="section is-large">
+        <section id="about" class="section is-medium">
             <div class="container is-max-desktop">
-                <div class="box">
+                <div class="box p-6">
                 <h2 class="title is-3 has-text-centered">About Me</h2>
-                <p class="has-text-centered">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro totam necessitatibus possimus odit, incidunt illum numquam voluptates. Quo velit libero beatae cumque, quisquam inventore, ipsum quas quae numquam suscipit sint!</p>
+                <p class="has-text-centered p-2" id="about-me-text">My Name is Justin Flanagan and I am a self-taught web developer. I first learned coding while minoring in computer science at college, working mostly with Java and Python. After graduating, I began teaching myself Javascript and found it much more enjoyable to work with a front-end language. Particularly, I love being able to create applications that I can view in a web browser and interact with. What I find most enjoyable about programming is how it enables me to expand or reinforce my knowledge when fixing errors, and the sense of accomplishment that comes from seeing an application perform as I envisioned.
+                </p>
             </div>
             </div>
             
         </section>
         <section id="projects" class="section is-large">
-            <div class="content" style="border-bottom: 1px solid black">
-                <h2 class="title is-1 has-text-centered" >Projects</h2>
+            <div class="content">
+                <h2 class="title is-1 has-text-centered pb-4"  style="border-bottom: 1px solid black" >Projects</h2>
             </div>
-            <div class="container is-flex is-justify-content-space-evenly is-flex-wrap-wrap" >
+            <div class="container is-flex is-justify-content-space-evenly is-flex-wrap-wrap pt-6">
                 <div class="block">
                     <div class="box">
                         <div class="content" style="width: 350px;">
@@ -48,7 +57,7 @@
                             </figure>
                             <p class="has-text-centered pb-4" style="border-bottom: 1px solid black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consequatur ut, minima aperiam fugit in quod laborum maiores sapiente deleniti et ratione natus, porro ipsum sit voluptatibus aspernatur doloremque. Natus?</p>
                             <div class="level" >
-                                <a href="" class="level-item" style="border-right: 1px solid;">Live Demo</a>
+                                <a href="https://justin-flanagan-restaurants.herokuapp.com" class="level-item" style="border-right: 1px solid;">Live Demo</a>
                                 <a href="https://github.com/jflanagan55/Restaurants" class="level-item">Source Code</a>
                             </div>
                         </div>
@@ -63,8 +72,8 @@
                             </figure>
                             <p class="has-text-centered pb-4" style="border-bottom: 1px solid black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consequatur ut, minima aperiam fugit in quod laborum maiores sapiente deleniti et ratione natus, porro ipsum sit voluptatibus aspernatur doloremque. Natus?</p>
                             <div class="level" >
-                                <a href="" class="level-item" style="border-right: 1px solid;">Live Demo</a>
-                                <a href="https://github.com/jflanagan55/eCommerce/tree/main/ecommerce" class="level-item">Source Code</a>
+                                <a href="https://justin-flanagan-shoe-store.herokuapp.com/" class="level-item" style="border-right: 1px solid;">Live Demo</a>
+                                <a href="https://github.com/jflanagan55/eCommerce/" class="level-item">Source Code</a>
                             </div>
                         </div>
                     </div>
@@ -78,7 +87,7 @@
                             </figure>
                             <p class="has-text-centered pb-4" style="border-bottom: 1px solid black">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consequatur ut, minima aperiam fugit in quod laborum maiores sapiente deleniti et ratione natus, porro ipsum sit voluptatibus aspernatur doloremque. Natus?</p>
                             <div class="level" >
-                                <a href="" class="level-item" style="border-right: 1px solid;">Live Demo</a>
+                                <a href="https://justin-flanagan-cocktail.herokuapp.com/index.html" class="level-item" style="border-right: 1px solid;">Live Demo</a>
                                 <a href="https://github.com/jflanagan55/CocktailAPI" class="level-item">Source Code</a>
                             </div>
                         </div>
@@ -105,7 +114,7 @@
                 </div>
                 <h3 class="title has-text-centered">Have a Question?</h3>
                     <div class="is-flex is-justify-content-center">
-                       <form action="" id="contact-form" class="mx-6">
+                       <form action="https://formsubmit.co/el/fipari" id="contact-form" class="mx-6" method="POST">
                            <div class="field">
                                <label class="label has-text-centered" for="your-name">Your Name</label>
                                <div class="control">
