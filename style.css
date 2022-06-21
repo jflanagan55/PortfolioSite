@@ -1,5 +1,5 @@
 *{
-  font-family: 'Merriweather', serif;
+  font-family: 'Kanit', sans-serif
 }
 
 #contact-form{
@@ -8,6 +8,7 @@
 #navbar{
   position: sticky;
   top:0;
+  background-color: #F9FEFF;
 }
 #about-btn:hover, #projects-btn:hover, #contact-btn:hover{
   background-color: black;
@@ -15,11 +16,102 @@
   border-radius: 0.5rem;
 }
 main{
-  background-image: radial-gradient(#000033,#050114, #040157);
+  background-image: radial-gradient(#000000,#000033, #040157);
 
 }
 #about-me-text{
   font-size: 1.4rem;
   line-height: 2.6rem;
 
+}
+#projects-header{
+  border-bottom: 4px solid  #F9FEFF;
+}
+#about-container{
+  background-color: #F9FEFF;
+}
+#wrapper{
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+ 
+}
+#test{
+  flex-grow: 1;
+  background-image: radial-gradient(#000000,#000033, #040157);
+}
+#test p, #arrows span {
+  font-size: 3rem;
+  color: #F9FEFF;
+  text-shadow: 0 0 5px #fff;
+}
+#about-me, #projects-header{
+  font-size: 3rem;
+  color: #F9FEFF;
+}
+#jf{
+  animation-name:come-in-right;
+  animation-duration:1.9s;
+  animation-timing-function: ease-in;
+}
+#wd{
+  animation-name:come-in-left;
+  animation-duration: 1.9s;
+  animation-timing-function: ease-in;
+
+}
+
+@keyframes come-in-left {
+  0%{padding-left:30rem;}
+  100%{padding-left: 0rem;}
+}
+@keyframes come-in-right{
+  0%{padding-right:30rem;}
+  100%{padding-right: 0rem;}
+}
+#bounce{
+  animation: bounce-text 1.4s infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2.5s;
+  
+}
+
+@keyframes bounce-text{
+  0%, 100%{
+    transform: translateY(0)
+
+  }
+  10%, 90%{
+    transform: translateY(-2px);
+    font-size: 3.01rem;
+
+  }
+  20%, 80%{
+    transform: translateY(-4px);
+    font-size: 3.02rem;
+
+  }
+  30%, 70%{
+    transform: translateY(-6px);
+    font-size: 3.03rem;
+
+  }
+  40%, 60%{
+    transform: translateY(-8px);
+    font-size: 3.04rem;
+
+  }
+  50%{
+    transform: translateY(-10px);
+    font-size: 3.05rem;
+
+  }
+}
+#arrows{
+  animation: bounce-text 1.4s infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2.5s;
+}
+.box>*{
+  color: black;
 }
