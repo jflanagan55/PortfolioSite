@@ -12,12 +12,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Merriweather:wght@300&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Merriweather:wght@300&family=Titillium+Web&display=swap" rel="stylesheet">
+
     <script src="index.js" defer></script>
     <title>Portfolio Site</title>
   </head>
@@ -65,6 +63,7 @@
         id="test"
         class="is-flex is-align-items-center is-justify-content-space-evenly is-flex-direction-column"
       >
+        
         <div>
           <p id="jf" class="mr-6 mb-6">Justin Flanagan.</p>
           <p id="wd" class="ml-6 mt-6">Web Developer</p>
@@ -80,8 +79,9 @@
       </section>
     </div>
     <main>
-      <section id="about" class="section is-medium">
-        <h2 class="title has-text-centered" id="about-me">
+      <section id="about" class="section is-large">
+        <div class="container is-max-desktop">
+        <h2 class="title has-text-right pr-4 pb-2 pt-6" id="about-me">
             About Me
           </h2>
           <div class="container is-max-desktop">
@@ -103,7 +103,7 @@
       </section>
       <section id="projects" class="section is-large">
         <div class="content">
-          <h2 class="title is-1 has-text-centered pb-4" id="projects-header">
+          <h2 class="title is-1 has-text-centered pb-4" id="projects-header" style="color:white;">
             Projects
           </h2>
         </div>
@@ -112,30 +112,27 @@
         >
           <div class="block">
             <div class="box">
-              <div class="content" style="width: 350px">
+              <div class="content p-2" style="width: 350px">
                 <h3 class="title is-3 has-text-centered">Restaurant Journal</h3>
                 <figure class="image is-square">
-                  <img src="https://bulma.io/images/placeholders/256x256.png" />
+                  <img src=https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80 />
                 </figure>
                 <p
                   class="has-text-centered pb-4"
-                  style="border-bottom: 1px solid black"
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Repellat consequatur ut, minima aperiam fugit in quod laborum
-                  maiores sapiente deleniti et ratione natus, porro ipsum sit
-                  voluptatibus aspernatur doloremque. Natus?
+                Simple CRUD application with user authentication that stores users reviews of restaurants. Made with Mongoose, Express, and Node.
+
                 </p>
                 <div class="level">
                   <a
                     href="https://justin-flanagan-restaurants.herokuapp.com"
-                    class="level-item"
-                    style="border-right: 1px solid"
+                    class="level-item button is-rounded"
+                    
                     >Live Demo</a
                   >
                   <a
                     href="https://github.com/jflanagan55/Restaurants"
-                    class="level-item"
+                    class="level-item button is-rounded"
                     >Source Code</a
                   >
                 </div>
@@ -144,30 +141,25 @@
           </div>
           <div class="block">
             <div class="box">
-              <div class="content" style="width: 350px">
+              <div class="content p-2" style="width: 350px">
                 <h3 class="title is-3 has-text-centered">Shoe Store</h3>
                 <figure class="image is-square">
-                  <img src="https://bulma.io/images/placeholders/256x256.png" />
+                  <img src="https://images.unsplash.com/photo-1603808033192-082d6919d3e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=715&q=80" />
                 </figure>
                 <p
-                  class="has-text-centered pb-4"
-                  style="border-bottom: 1px solid black"
-                >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Repellat consequatur ut, minima aperiam fugit in quod laborum
-                  maiores sapiente deleniti et ratione natus, porro ipsum sit
-                  voluptatibus aspernatur doloremque. Natus?
+                  class="has-text-centered pb-4"                >
+                Mock e-commerce shoe site with interactive cart and checkout form validation. Made with React, Redux, and Semantic UI.
+
                 </p>
                 <div class="level">
                   <a
                     href="https://justin-flanagan-shoe-store.herokuapp.com/"
-                    class="level-item"
-                    style="border-right: 1px solid"
+                    class="level-item button is-rounded"
                     >Live Demo</a
                   >
                   <a
                     href="https://github.com/jflanagan55/eCommerce/"
-                    class="level-item"
+                    class="level-item button is-rounded"
                     >Source Code</a
                   >
                 </div>
@@ -176,30 +168,26 @@
           </div>
           <div class="block">
             <div class="box">
-              <div class="content" style="width: 350px">
+              <div class="content p-2" style="width: 350px">
                 <h3 class="title is-3 has-text-centered">Cocktail Finder</h3>
                 <figure class="image is-square">
-                  <img src="https://bulma.io/images/placeholders/256x256.png" />
+                  <img src="https://images.unsplash.com/photo-1587223962930-cb7f31384c19?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" />
                 </figure>
                 <p
                   class="has-text-centered pb-4"
-                  style="border-bottom: 1px solid black"
                 >
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Repellat consequatur ut, minima aperiam fugit in quod laborum
-                  maiores sapiente deleniti et ratione natus, porro ipsum sit
-                  voluptatibus aspernatur doloremque. Natus?
+                User Interface that connects to a cocktail api, takes user input, and displays information about a drink. Made with Javascipt and Bulma.
+
                 </p>
                 <div class="level">
                   <a
                     href="https://justin-flanagan-cocktail.herokuapp.com/index.html"
-                    class="level-item"
-                    style="border-right: 1px solid"
+                    class="level-item button is-rounded"
                     >Live Demo</a
                   >
                   <a
                     href="https://github.com/jflanagan55/CocktailAPI"
-                    class="level-item"
+                    class="level-item button is-rounded"
                     >Source Code</a
                   >
                 </div>
@@ -209,7 +197,7 @@
         </div>
       </section>
       <section id="contact" class="section is-small">
-        <div class="footer">
+        <div class="footer" id="footer">
           <h3 class="title has-text-centered">Contact Me</h3>
           <div class="level is-flex is-justify-content-space-evenly">
             <div class="level-item">
