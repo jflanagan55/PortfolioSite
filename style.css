@@ -146,6 +146,15 @@ body{
     padding:0 !important;
   }
 }
+#submit-button{
+  border: 5px solid #725aff;
+  color:  #725aff;
+}
+#download-resume{
+  background-color: #725aff;
+  color: white;
+  font-size: 1.2rem;
+}
 .box .level a{
   padding: 0.5rem;
   border: 5px solid #725aff;
@@ -169,11 +178,10 @@ body{
   gap: 0.2rem;
 }
 @media screen and (max-width: 769px) {
-  .level a{
+  .box .level a{
     width: auto;
   }
 }
-
 
 
 #projects{
@@ -184,7 +192,7 @@ body{
 body, #projects{
   background-image:linear-gradient(to right, #3377ff, #725aff );
 }
-.content img{
+.content img, .footer{
   border-radius: 1rem;
 }
 @media screen and (max-width: 1023px) {
@@ -201,9 +209,22 @@ body, #projects{
 #footer{
   background-color: white;
 }
+input, textarea {
+  text-align: center;
+}
 
+::placeholder {
+  text-align: center;
+}
 
-
+#submit-button, #download-resume {
+  font-weight:500; 
+  transition: all .3s ease-in-out; 
+  }
+  
+  #submit-button:hover,  #download-resume:hover { 
+  transform: scale(1.08); 
+  }
 
 
   

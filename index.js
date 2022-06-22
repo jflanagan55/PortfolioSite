@@ -5,3 +5,7 @@ triggerHamburger.addEventListener('click', ()=>{
     
 
 })
+const submitBtn = document.querySelector('#submit-button');
+submitBtn.addEventListener('click', ()=>{
+    alert("thanks for reaching out 🤝🏽")
+})

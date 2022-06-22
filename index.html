@@ -65,7 +65,7 @@
       >
         
         <div>
-          <p id="jf" class="mr-6 mb-6">Justin Flanagan.</p>
+          <p id="jf" class="mr-6 mb-6">Justin Flanagan</p>
           <p id="wd" class="ml-6 mt-6">Web Developer</p>
         </div>
         <div>
@@ -209,7 +209,26 @@
                 </svg>
               </a>
             </div>
-            <button class="button is-link">Download Resume</button>
+            <button class="button is-rounded p-4" id="download-resume">
+                
+                <span><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="7 10 12 15 17 10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
+                  </svg>
+                  </span>
+                
+                <span class="pl-2">Download Resume</button>
             <div class="level-item">
               <a href="https://www.linkedin.com/in/justin-flan" class="icon">
                 <svg
@@ -246,7 +265,7 @@
                 >
                 <div class="control">
                   <input
-                    class="input"
+                    class="input is-rounded"
                     type="text"
                     id="your-name"
                     name="your-name"
@@ -258,7 +277,7 @@
                   >Your Email</label
                 >
                 <div class="control">
-                  <input class="input" type="email" id="email" name="email" />
+                  <input class="input is-rounded" type="email" id="email" name="email" />
                 </div>
               </div>
               <div class="field">
@@ -273,7 +292,7 @@
                 </div>
               </div>
               <div class="is-flex is-justify-content-center">
-                <button class="button is-success">Submit Message</button>
+                <button class="button is-rounded mt-4 p-5" id="submit-button">Submit Message</button>
               </div>
             </form>
           </div>
