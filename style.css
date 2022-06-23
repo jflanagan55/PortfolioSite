@@ -1,19 +1,18 @@
 *{
   font-family: 'Titillium Web', sans-serif;
 }
-body{
-
-  z-index: -1000;
+body{  z-index: -1000;
 }
 
 #contact-form{
   width: 400px;
 }
+
 #navbar{
   position: sticky;
   top:0;
   background-color:#ffffff;
-  border-bottom: 5px solid #23ffff;
+  border-bottom: 8px solid  #725aff;
 }
 #about-btn:hover, #projects-btn:hover, #contact-btn:hover{
   background-color: black;
@@ -36,10 +35,9 @@ body{
   background-color: #ffffff;
 }
 #wrapper{
-  height:100vh;
   display: flex;
   flex-direction: column;
-  background-color: #26ffe2;
+  
 
  
 }
@@ -51,7 +49,7 @@ body{
 
 }
 #test p, #arrows span {
-  font-size: 3rem;
+  font-size: 2rem;
   color: black;
 }
 #about-me{
@@ -60,7 +58,8 @@ body{
 }
 
 #jf{
-  font-weight: 700;
+  height: auto;
+  width: 600px;
   animation-name:come-in-right;
   animation-duration:1.9s;
   animation-timing-function: ease-in;
@@ -73,14 +72,6 @@ body{
 
 }
 
-@keyframes come-in-left {
-  0%{padding-left:30rem;}
-  100%{padding-left: 0rem;}
-}
-@keyframes come-in-right{
-  0%{padding-right:30rem;}
-  100%{padding-right: 0rem;}
-}
 #bounce{
   animation: bounce-text 1.4s infinite;
   animation-timing-function: ease-in-out;
@@ -95,31 +86,32 @@ body{
   }
   10%, 90%{
     transform: translateY(-2px);
-    font-size: 3.01rem;
+    font-size: 2.01rem;
 
   }
   20%, 80%{
     transform: translateY(-4px);
-    font-size: 3.02rem;
+    font-size: 2.02rem;
 
   }
   30%, 70%{
     transform: translateY(-6px);
-    font-size: 3.03rem;
+    font-size: 2.03rem;
 
   }
   40%, 60%{
     transform: translateY(-8px);
-    font-size: 3.04rem;
+    font-size: 2.04rem;
 
   }
   50%{
     transform: translateY(-10px);
-    font-size: 3.05rem;
+    font-size: 2.05rem;
 
   }
 }
 #arrows{
+  z-index: 15;
   animation: bounce-text 1.4s infinite;
   animation-timing-function: ease-in-out;
   animation-delay: 2.5s;
@@ -182,7 +174,19 @@ body{
     width: auto;
   }
 }
-
+@media screen and (max-width: 400px) {
+  *{
+    margin:auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  #bounce-container{
+   display: none;
+  }
+}
+#bounce-container{
+  z-index: 10;
+}
 
 #projects{
   margin-top:-16rem;
@@ -226,5 +230,10 @@ input, textarea {
   transform: scale(1.08); 
   }
 
-
-  
+#et4g91Lls3E1{
+  height: 45px;
+  padding-left: 2rem;
+}
+.navbar-menu a {
+  font-size: 1.5rem;
+}
