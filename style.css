@@ -62,8 +62,8 @@ body{  z-index: -1000;
 
 
 
-#bounce{
-  animation: bounce-text 1.4s infinite;
+#bounce-container p{
+  animation: bounce-text 1.95s infinite;
   animation-timing-function: ease-in-out;
   animation-delay: 2.5s;
   
@@ -73,26 +73,26 @@ body{  z-index: -1000;
 
   10%, 90%{
 
-    transform: scale(1.05)
+    transform: scale(1.03)
 
   }
   20%, 80%{
-    transform: scale(1.1)
+    transform: scale(1.06)
 
 
   }
   30%, 70%{
-    transform: scale(1.15)
+    transform: scale(1.09)
 
 
   }
   40%, 60%{
-    transform: scale(1.2)
+    transform: scale(1.12)
 
 
   }
   50%{
-    transform: scale(1.25)
+    transform: scale(1.16)
 
 
   }
@@ -126,13 +126,16 @@ body{  z-index: -1000;
   }
 }
 #submit-button{
-  border: 5px solid #725aff;
-  color:  #725aff;
+  background-image: linear-gradient(to right, #3377ff, #725aff );
+  color: white;
+  display: flex;
+
 }
 #download-resume{
-  background-color: #725aff;
+  background-image: linear-gradient(to right, #3377ff, #725aff );
   color: white;
   font-size: 1.2rem;
+  max-width: 400px;
 }
 .box .level a{
   padding: 0.5rem;
@@ -218,9 +221,25 @@ input, textarea {
   }
 
 #et4g91Lls3E1{
-  height: 45px;
-  padding-left: 2rem;
+  height: 52px;
+  padding-left: 1rem;
 }
 .navbar-menu a {
   font-size: 1.2rem;
+}
+#trigger-hamburger:hover{
+  background-color: #725aff;
+  border-radius: 0.7rem;
+  color:white;
+}
+
+#trigger-hamburger:hover span{
+  color:white;
+}
+#trigger-hamburger span{
+  height: 1.7px;
+  color:black;
+}
+#linkedin:hover, #github:hover{
+  transform: scale(1.2);
 }
