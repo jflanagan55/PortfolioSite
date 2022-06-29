@@ -168,6 +168,8 @@ body{  z-index: -1000;
   *{
     margin:0;
   }
+  #download-resume{
+display: none;  }
 }
 @media screen and (max-width: 500px) {
   #bounce-container{
