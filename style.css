@@ -15,7 +15,7 @@ body{  z-index: -1000;
   position: sticky;
   top:0;
   background-color:#ffffff;
-  border-bottom: 8px solid  #725aff;
+  border-bottom: 5.5px solid  #725aff;
 }
 #about-btn:hover, #projects-btn:hover, #contact-btn:hover{
   background-color: black;
