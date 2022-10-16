@@ -1,27 +1,73 @@
-*{
-  font-family: 'Titillium Web', sans-serif;
+:root{
+  --title-font: 'Kanit', sans-serif;;
+  --write-font: 'Roboto Condensed', sans-serif;
+  --purple-accent:#725aff;
 }
-body{  z-index: -1000;
-}
+/* background-color: rgb(246,249,252);   #073b4c;*/
+/*navbar*/
+        nav{
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 4px solid var(--purple-accent);
+          background-color: #1e2019
+        }
+        #justin-flanagan{
+          font-family: 'Fuzzy Bubbles', cursive;;
+          font-size: 3rem;
+          color: #ffffff;
+        }
+        #social a:nth-child(even), #nav-info a:nth-child(even){
+          border-right: 1.2px solid var(--purple-accent);
+          border-left:  1.2px solid var(--purple-accent);
+        }
+        #social a:nth-child(1), #nav-info a:nth-child(1){
+          border-right: 1.2px solid var(--purple-accent);
+        }
+        #social a:nth-child(3), #nav-info a:nth-child(3){
+          border-left:  1.2px solid var(--purple-accent)
+        }
 
+        nav div{
+          display:flex;
+          justify-content: space-evenly;
+          align-items: center;
+        }
+        nav div a{
+          display: flex;
+          align-items: center;
+          color:#ffffff;
+          font-weight: 700;
+          font-family: var(--write-font);
+        }
+        nav div:nth-child(odd){
+          font-size: 1.15rem;
+        }
+        nav div a:hover{
+          color:var(--purple-accent);
+        }
+/*end of nav bar*/
 #contact-form{
   width: 400px;
 }
-#jf{
-  width: 35rem;
-  margin-top: 4rem;
-}
-#navbar{
-  position: sticky;
-  top:0;
-  background-color:#ffffff;
-  border-bottom: 5.5px solid  #725aff;
-}
-#about-btn:hover, #projects-btn:hover, #contact-btn:hover{
-  background-color: black;
-  color: white !important;
-  border-radius: 0.5rem;
-}
+/*first section*/
+        #first-section{
+          background: rgb(208,206,206);
+  background: radial-gradient(circle, rgba(208,206,206,1) 18%, rgba(212,207,207,1) 19%, rgba(212,212,212,1) 21%, rgba(217,214,214,1) 23%, rgba(213,213,213,1) 25%, rgba(218,215,219,1) 26%, rgba(217,215,218,1) 27%, rgba(222,219,224,1) 29%, rgba(227,226,228,1) 31%, rgba(235,234,236,1) 35%, rgba(255,255,255,1) 100%);
+
+          min-height: 70vh;
+        }
+        #first-section p:nth-child(odd){
+          font-family: var(--write-font);
+          font-size: 3.5rem;
+          color: var(--purple-accent);
+          font-weight: 900;
+        }
+        #first-section p:nth-child(even){
+          font-family: var(--title-font);
+          font-size:2.2rem;
+          color: #17021f;
+
+        }
 
 #about-me-text{
   font-size: 1.4rem;
@@ -35,7 +81,7 @@ body{  z-index: -1000;
   letter-spacing: 0.11rem;
 }
 #about-container{
-  background-color: #ffffff;
+  background-color: rgb(246,249,252);
 }
 #wrapper{
   display: flex;
@@ -44,81 +90,20 @@ body{  z-index: -1000;
 
  
 }
-#test{
-  flex-grow: 1;
-  background-color:#ffffff;
-  position: relative;
 
-
-}
-#test p, #arrows span {
-  font-size: 2.5rem;
-  color: black;
-}
 #about-me{
   color:black;
   font-size: 2.8rem;
 }
 
-
-
-#bounce-container p{
-  animation: bounce-text 1.95s infinite;
-  animation-timing-function: ease-in-out;
-  animation-delay: 2.5s;
-  
-}
-
-@keyframes bounce-text{
-
-  10%, 90%{
-
-    transform: scale(1.03)
-
-  }
-  20%, 80%{
-    transform: scale(1.06)
-
-
-  }
-  30%, 70%{
-    transform: scale(1.09)
-
-
-  }
-  40%, 60%{
-    transform: scale(1.12)
-
-
-  }
-  50%{
-    transform: scale(1.16)
-
-
-  }
-}
-#arrows{
-  z-index: 15;
-  animation: bounce-text 1.4s infinite;
-  animation-timing-function: ease-in-out;
-  animation-delay: 2.5s;
-}
 .box>*{
   color: black;
 }
 #about{
-  background-color:#ffffff;
+  background-color: rgb(246,249,252);
 
 }
-#test::after{
-  content: " ";
-  width: 100%;
-  height: 370px;
-  bottom:-18rem;
-  position:absolute;
-  background-image: linear-gradient(to right,#23ffff,#c0ffff);
-  transform: skewY(-5deg);
-}
+
 @media screen and (max-width: 1023px) {
   #about-me{
     text-align: center !important;
@@ -130,12 +115,6 @@ body{  z-index: -1000;
   color: white;
   display: flex;
 
-}
-#download-resume{
-  background-image: linear-gradient(to right, #3377ff, #725aff );
-  color: white;
-  font-size: 1.2rem;
-  max-width: 400px;
 }
 .box .level a{
   padding: 0.5rem;
@@ -171,21 +150,13 @@ body{  z-index: -1000;
   #download-resume{
 display: none;  }
 }
-@media screen and (max-width: 500px) {
-  #bounce-container{
-   display: none;
-  }
-}
-#bounce-container{
-  z-index: 10;
-}
 
 #projects{
   margin-top:-16rem;
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
 
 }
-body, #projects{
+ #projects{
   background-image:linear-gradient(to right, #3377ff, #725aff );
 }
 .content img, .footer{
@@ -226,9 +197,7 @@ input, textarea {
   height: 52px;
   padding-left: 1rem;
 }
-.navbar-menu a {
-  font-size: 1.2rem;
-}
+
 #trigger-hamburger:hover{
   background-color: #725aff;
   border-radius: 0.7rem;
@@ -241,7 +210,4 @@ input, textarea {
 #trigger-hamburger span{
   height: 1.7px;
   color:black;
-}
-#linkedin:hover, #github:hover{
-  transform: scale(1.2);
 }
