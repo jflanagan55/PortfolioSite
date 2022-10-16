@@ -46,15 +46,15 @@
           color:var(--purple-accent);
         }
 /*end of nav bar*/
-#contact-form{
-  width: 400px;
-}
+
 /*first section*/
         #first-section{
           background: rgb(208,206,206);
-  background: radial-gradient(circle, rgba(208,206,206,1) 18%, rgba(212,207,207,1) 19%, rgba(212,212,212,1) 21%, rgba(217,214,214,1) 23%, rgba(213,213,213,1) 25%, rgba(218,215,219,1) 26%, rgba(217,215,218,1) 27%, rgba(222,219,224,1) 29%, rgba(227,226,228,1) 31%, rgba(235,234,236,1) 35%, rgba(255,255,255,1) 100%);
-
+          background: radial-gradient(circle, rgba(208,206,206,1) 18%, rgba(212,207,207,1) 19%, rgba(212,212,212,1) 21%, rgba(217,214,214,1) 23%, rgba(213,213,213,1) 25%, rgba(218,215,219,1) 26%, rgba(217,215,218,1) 27%, rgba(222,219,224,1) 29%, rgba(227,226,228,1) 31%, rgba(235,234,236,1) 35%, rgba(255,255,255,1) 100%);
           min-height: 70vh;
+        }
+        #first-section p{
+          text-align:center;
         }
         #first-section p:nth-child(odd){
           font-family: var(--write-font);
@@ -66,43 +66,36 @@
           font-family: var(--title-font);
           font-size:2.2rem;
           color: #17021f;
+          padding-top:5rem;
 
         }
+/*skills-section*/
+          #skills-section>*{
+            text-align:center;
+          }
 
-#about-me-text{
-  font-size: 1.4rem;
-  line-height: 2.6rem;;
 
-}
+
+
 #projects-header{
   border-bottom: 4px solid  #ffffff;
   font-size: 3.5rem;
   color: #ffffff;
   letter-spacing: 0.11rem;
 }
-#about-container{
-  background-color: rgb(246,249,252);
-}
 #wrapper{
   display: flex;
-  flex-direction: column;
-  
-
- 
+  flex-direction: column; 
+}
+#contact-form{
+  width: 400px;
 }
 
-#about-me{
-  color:black;
-  font-size: 2.8rem;
-}
 
 .box>*{
   color: black;
 }
-#about{
-  background-color: rgb(246,249,252);
 
-}
 
 @media screen and (max-width: 1023px) {
   #about-me{
@@ -151,11 +144,7 @@
 display: none;  }
 }
 
-#projects{
-  margin-top:-16rem;
-  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
 
-}
  #projects{
   background-image:linear-gradient(to right, #3377ff, #725aff );
 }
