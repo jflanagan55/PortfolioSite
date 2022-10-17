@@ -2,6 +2,7 @@
   --title-font: 'Kanit', sans-serif;;
   --write-font: 'Roboto Condensed', sans-serif;
   --purple-accent:#725aff;
+  --purple-gradient: linear-gradient(to right, #3377ff, #725aff );
 }
 /* background-color: rgb(246,249,252);   #073b4c;*/
 /*navbar*/
@@ -77,29 +78,35 @@
           }
           #skills-section h2{
             font-family: var(--title-font);
-            font-size:3.4rem;
+            font-size:4.1rem;
             font-weight: 700;
             color: #1e2019;
           }
           #skills-section h3{
             font-family: var(--title-font);
-            font-size:2.4rem;
+            font-size:2.7rem;
             font-weight: 700;
+            letter-spacing: 0.1rem;
+           
           }
-
-
-
-
-#projects-header{
-  border-bottom: 4px solid  #ffffff;
-  font-size: 3.5rem;
-  color: #ffffff;
-  letter-spacing: 0.11rem;
-}
-#wrapper{
-  display: flex;
-  flex-direction: column; 
-}
+          #skills-section h3 span{
+            background: var(--purple-gradient);
+            background-position: 0 100%;
+            background-size: 100% 3px;
+            background-repeat: repeat-x;
+          }
+          .icon-container{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap:5rem;
+          }
+          #skills-section h3::after{
+            content: "";
+            width: 32px;
+            padding-top: 3px;
+            border-bottom: 200px solid #000000;
+          }
 #contact-form{
   width: 400px;
 }
@@ -108,13 +115,16 @@
 .box>*{
   color: black;
 }
-
-
-@media screen and (max-width: 1023px) {
-  #about-me{
-    text-align: center !important;
-    padding:0 !important;
-  }
+#projects-underline{
+  height:5px;
+  background-color:white;
+  border-radius: 5rem;
+}
+#projects-h2{
+  font-size: 4rem;
+  color: white;
+  font-family: var(--title-font);
+  padding-bottom: 1rem;
 }
 #submit-button{
   background-image: linear-gradient(to right, #3377ff, #725aff );
@@ -158,31 +168,17 @@ display: none;  }
 }
 
 
- #projects{
+ #projects-section{
   background-image:linear-gradient(to right, #3377ff, #725aff );
 }
 .content img, .footer{
   border-radius: 1rem;
 }
-@media screen and (max-width: 1023px) {
-  #projects{
-    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%) !important;
-    margin-top:0;
-  }
-  #about{
-    background-image:linear-gradient(to right, #3377ff, #725aff );
 
-
-  }
-}
 #footer{
   background-color: white;
 }
-input, textarea {
-  text-align: center;
-}
-
-::placeholder {
+input, textarea, ::placeholder,#projects-h2 {
   text-align: center;
 }
 
@@ -194,11 +190,6 @@ input, textarea {
   #submit-button:hover,  #download-resume:hover { 
   transform: scale(1.08); 
   }
-
-#et4g91Lls3E1{
-  height: 52px;
-  padding-left: 1rem;
-}
 
 #trigger-hamburger:hover{
   background-color: #725aff;
