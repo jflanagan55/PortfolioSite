@@ -51,7 +51,8 @@
         #first-section{
           background: rgb(208,206,206);
           background: radial-gradient(circle, rgba(208,206,206,1) 18%, rgba(212,207,207,1) 19%, rgba(212,212,212,1) 21%, rgba(217,214,214,1) 23%, rgba(213,213,213,1) 25%, rgba(218,215,219,1) 26%, rgba(217,215,218,1) 27%, rgba(222,219,224,1) 29%, rgba(227,226,228,1) 31%, rgba(235,234,236,1) 35%, rgba(255,255,255,1) 100%);
-          min-height: 70vh;
+          min-height: 80vh;
+          justify-content: center;
         }
         #first-section p{
           text-align:center;
@@ -67,11 +68,23 @@
           font-size:2.2rem;
           color: #17021f;
           padding-top:5rem;
+          font-weight: 700;
 
         }
 /*skills-section*/
           #skills-section>*{
             text-align:center;
+          }
+          #skills-section h2{
+            font-family: var(--title-font);
+            font-size:3.4rem;
+            font-weight: 700;
+            color: #1e2019;
+          }
+          #skills-section h3{
+            font-family: var(--title-font);
+            font-size:2.4rem;
+            font-weight: 700;
           }
 
 
