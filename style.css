@@ -10,7 +10,10 @@
           display: flex;
           justify-content: space-between;
           border-bottom: 4px solid var(--purple-accent);
-          background-color: #1e2019
+          background-color: #1e2019;
+          position: sticky;
+          top: 0;
+          z-index: 10;
         }
         #justin-flanagan{
           font-family: 'Fuzzy Bubbles', cursive;;
@@ -46,8 +49,6 @@
         nav div a:hover{
           color:var(--purple-accent);
         }
-/*end of nav bar*/
-
 /*first section*/
         #first-section{
           background: rgb(208,206,206);
@@ -97,9 +98,9 @@
           }
           .icon-container{
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             flex-wrap: wrap;
-            gap:5rem;
+            
           }
           #skills-section h3::after{
             content: "";
@@ -107,14 +108,10 @@
             padding-top: 3px;
             border-bottom: 200px solid #000000;
           }
-#contact-form{
-  width: 400px;
-}
 
 
-.box>*{
-  color: black;
-}
+/*Projects Section*/
+
 #projects-underline{
   height:5px;
   background-color:white;
@@ -126,16 +123,24 @@
   font-family: var(--title-font);
   padding-bottom: 1rem;
 }
-#submit-button{
-  background-image: linear-gradient(to right, #3377ff, #725aff );
-  color: white;
-  display: flex;
-
+.project-titles{
+  text-align: center;
+  font-size: 2.4rem !important;
+  font-family: var(--title-font);
+  font-weight: 800;
 }
+img{
+  height: 25rem !important;
+  width: 25rem !important;
+  border: 2px solid #6a6276;;
+}
+.box{
+  max-width: 80rem;
+}
+
 .box .level a{
   padding: 0.5rem;
   border: 5px solid #725aff;
-  color:black;
   font-size: 1.4rem;
   font-weight:600;
   width: 150px;
@@ -148,59 +153,57 @@
 
 }
 .content p {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
+  font-family: var(--write-font);
+  font-weight: 600;
+  color: #6a6276;
+}
+.content h3{
+  font-size: 2.8rem;
+  font-family: var(--title-font);
+  font-weight: 800;
+}
+.content{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+ 
 }
 
 .level{
   gap: 0.2rem;
-}
-@media screen and (max-width: 769px) {
-  .box .level a{
-    width: auto;
-  }
-}
-@media screen and (max-width: 400px) {
-  *{
-    margin:0;
-  }
-  #download-resume{
-display: none;  }
 }
 
 
  #projects-section{
   background-image:linear-gradient(to right, #3377ff, #725aff );
 }
-.content img, .footer{
-  border-radius: 1rem;
-}
 
-#footer{
-  background-color: white;
-}
 input, textarea, ::placeholder,#projects-h2 {
   text-align: center;
 }
 
-#submit-button, #download-resume {
-  font-weight:500; 
-  transition: all .3s ease-in-out; 
-  }
+
   
-  #submit-button:hover,  #download-resume:hover { 
-  transform: scale(1.08); 
-  }
 
-#trigger-hamburger:hover{
-  background-color: #725aff;
-  border-radius: 0.7rem;
-  color:white;
-}
 
-#trigger-hamburger:hover span{
-  color:white;
-}
-#trigger-hamburger span{
-  height: 1.7px;
-  color:black;
-}
+/*form section*/
+    #contact-form{
+      width: 400px;
+    }
+    #submit-button{
+      background-image: linear-gradient(to right, #3377ff, #725aff );
+      color: white;
+      display: flex;
+      font-weight:500; 
+      transition: all .3s ease-in-out;
+    }
+    #submit-button:hover{ 
+      transform: scale(1.08); 
+      }
+      .content img, .footer{
+        border-radius: 1rem;
+      }
+      
+      #footer{
+        background-color: white;
+      } 
