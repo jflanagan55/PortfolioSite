@@ -137,16 +137,20 @@ img{
 .box{
   max-width: 80rem;
 }
-
-.box .level a{
+.button-container{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.button-container a{
   padding: 0.5rem;
   border: 5px solid #725aff;
   font-size: 1.4rem;
   font-weight:600;
-  width: 150px;
+  width: 200px;
   color:  #725aff;
 }
-.box .level a:hover{
+.button-container a:hover{
   background-color:  #725aff;
   color:white;
   border: 5px solid #725aff;
@@ -209,3 +213,31 @@ input, textarea, ::placeholder,#projects-h2 {
       .content img, .footer{
         border-radius: 1rem;
       }
+     /*media queries*/
+     @media(max-width: 900px){
+      .box:nth-child(odd) .content{
+        display: flex;
+        flex-direction: column;
+      }
+       #projects-container .box .content div{
+       justify-content: center!important;
+      }
+     .box:nth-child(even) .content{
+        display: flex;
+        flex-direction: column-reverse;
+      }
+     } 
+     @media(max-width: 500px){
+      .button-container{
+        flex-direction: column;
+        gap:0.5rem;
+        align-items: center;
+      }
+      .button-container a{
+        width: 320px;
+      }
+      .box{
+       width: 350px;
+      }
+     
+     }
