@@ -149,6 +149,7 @@ img{
   font-weight:600;
   width: 200px;
   color:  #725aff;
+  font-family: var(--title-font);
 }
 .button-container a:hover{
   background-color:  #725aff;
