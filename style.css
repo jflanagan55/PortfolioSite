@@ -15,7 +15,7 @@
           top: 0;
           z-index: 10;
         }
-        #justin-flanagan, #jf{
+        #justin-flanagan, #jf a{
           font-family: 'Pacifico', cursive;
           font-size: 3rem;
           color: #ffffff;
@@ -46,7 +46,7 @@
         nav div:nth-child(odd){
           font-size: 1.15rem;
         }
-        nav div a:hover{
+        nav div a:hover, #justin-flanagan:hover, #jf a:hover{
           color:var(--purple-accent);
         }
         #hamburger{
@@ -253,7 +253,7 @@ input, textarea, ::placeholder,#projects-h2 {
         transform: translate(-50%, -50%);
         width: 60vw;
         border-radius: 2rem;
-        background-color: #f7f0fe;
+        background-color: #ffffff;
         border: 5px solid black;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 
@@ -271,7 +271,7 @@ input, textarea, ::placeholder,#projects-h2 {
       #modal-content a:hover {
         transform: scale(1.05);
       }
-      
+    
     footer{
       color: white;
       background-color:var(--my-black);
