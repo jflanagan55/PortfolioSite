@@ -46,7 +46,7 @@
         nav div:nth-child(odd){
           font-size: 1.15rem;
         }
-        nav div a:hover, #justin-flanagan:hover, #jf a:hover{
+        nav div a:hover, #justin-flanagan:hover, #jf a{
           color:var(--purple-accent);
         }
         #hamburger{
@@ -256,7 +256,7 @@ input, textarea, ::placeholder,#projects-h2 {
         background-color: #ffffff;
         border: 5px solid black;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-
+        text-align: center;
 }
       
       #modal-content a {
@@ -264,7 +264,6 @@ input, textarea, ::placeholder,#projects-h2 {
         font-family: var(--title-font);
         font-weight: 700;
         color: var(--purple-accent);
-        text-align: center;
         
       }
 
@@ -275,7 +274,6 @@ input, textarea, ::placeholder,#projects-h2 {
     footer{
       color: white;
       background-color:var(--my-black);
-      height: 6vh;
       border-top: 4px solid var(--purple-accent);
       font-family: var(--title-font);
       font-size: 1.5rem;
@@ -312,6 +310,9 @@ input, textarea, ::placeholder,#projects-h2 {
       img{
         width: 250px !important;
         height: 250px!important;
+      }
+      #modal-content{
+        padding: 0!important;
       }
    
      }
