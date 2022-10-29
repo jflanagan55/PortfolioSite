@@ -3,14 +3,14 @@
   --write-font: 'Roboto Condensed', sans-serif;
   --purple-accent:#725aff;
   --purple-gradient: linear-gradient(to right, #3377ff, #725aff );
+  --my-black: #1e2019;
 }
-/* background-color: rgb(246,249,252);   #073b4c;*/
 /*navbar*/
         nav{
           display: flex;
           justify-content: space-between;
           border-bottom: 4px solid var(--purple-accent);
-          background-color: #1e2019;
+          background-color: var(--my-black);
           position: sticky;
           top: 0;
           z-index: 10;
@@ -272,7 +272,15 @@ input, textarea, ::placeholder,#projects-h2 {
         transform: scale(1.05);
       }
       
-
+    footer{
+      color: white;
+      background-color:var(--my-black);
+      height: 6vh;
+      border-top: 4px solid var(--purple-accent);
+      font-family: var(--title-font);
+      font-size: 1.5rem;
+   
+    }
 
 
      /*media queries*/
@@ -301,6 +309,11 @@ input, textarea, ::placeholder,#projects-h2 {
       .box{
        width: 350px;
       }
+      img{
+        width: 250px !important;
+        height: 250px!important;
+      }
+   
      }
      @media(max-width: 937px){
       #nav-info, #social, #justin-flanagan{
