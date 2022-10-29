@@ -16,7 +16,7 @@
           z-index: 10;
         }
         #justin-flanagan, #jf a{
-          font-family: 'Pacifico', cursive;
+          font-family: 'Fasthand', cursive;
           font-size: 3rem;
           color: #ffffff;
         }
@@ -46,7 +46,7 @@
         nav div:nth-child(odd){
           font-size: 1.15rem;
         }
-        nav div a:hover, #justin-flanagan:hover, #jf a{
+        nav div a:hover, #justin-flanagan:hover, #jf a:hover{
           color:var(--purple-accent);
         }
         #hamburger{
@@ -313,6 +313,7 @@ input, textarea, ::placeholder,#projects-h2 {
       }
       #modal-content{
         padding: 0!important;
+        display: block;
       }
    
      }
