@@ -1,21 +1,24 @@
-const openHamburger = document.querySelector("#trigger-hamburger");
-const navLinks = document.querySelectorAll(".navbar-item");
-const navMenu = document.querySelector(".navbar-menu");
-const contactForm = document.querySelector("#contact-form");
-
-openHamburger.addEventListener("click", () => {
-  navMenu.classList.toggle("is-active");
-  navLinks.forEach((link) => {
-    link.classList.add("close-on-click");
-    link.addEventListener("click", closeMenu);
-  });
-});
-const closeMenu = () => {
-  navMenu.classList.toggle("is-active");
-  navLinks.forEach((link) => {
-    link.classList.remove("close-on-click");
-  });
-};
-contactForm.addEventListener('submit', ()=>{
-    alert("Thanks for Reaching Out!")
+const hamburger = document.querySelector("#hamburger")
+let modal = document.querySelector("#modal")
+let modalLinks = document.querySelectorAll('.modal-links');
+hamburger.addEventListener('click', ()=>{
+  modal.style.display = "block"
 })
+modal.addEventListener(
+  "click",
+  function(event) {
+    // If user either clicks X button OR clicks outside the modal window, then close modal by calling closeModal()
+    if (
+      !event.target.closest("#modal-content")
+    ) {
+      closeModal()
+    }
+  },
+  false
+)
+modalLinks.forEach(link=>{
+  link.addEventListener('click', closeModal)
+})
+function closeModal() {
+  modal.style.display = "none"
+}
