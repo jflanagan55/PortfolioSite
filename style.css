@@ -136,8 +136,135 @@
   background-color:white;
   border-radius: 5rem;
 }
+<<<<<<< HEAD
 #projects-h2{
   font-size: 4rem;
+=======
+
+#contact-form{
+  width: 400px;
+}
+#jf{
+  width: 35rem;
+  margin-top: 4rem;
+}
+#navbar{
+  position: sticky;
+  top:0;
+  background-color:#ffffff;
+  border-bottom: 8px solid  #725aff;
+}
+#about-btn:hover, #projects-btn:hover, #contact-btn:hover{
+  background-color: black;
+  color: white !important;
+  border-radius: 0.5rem;
+}
+
+#about-me-text{
+  font-size: 1.4rem;
+  line-height: 2.6rem;;
+
+}
+#projects-header{
+  border-bottom: 4px solid  #ffffff;
+  font-size: 3.5rem;
+  color: #ffffff;
+  letter-spacing: 0.11rem;
+}
+#about-container{
+  background-color: #ffffff;
+}
+#wrapper{
+  display: flex;
+  flex-direction: column;
+  
+
+ 
+}
+#test{
+  flex-grow: 1;
+  background-color:#ffffff;
+  position: relative;
+
+
+}
+#test p, #arrows span {
+  font-size: 2.5rem;
+  color: black;
+}
+#about-me{
+  color:black;
+  font-size: 2.8rem;
+}
+
+
+
+#bounce-container p{
+  animation: bounce-text 1.95s infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2.5s;
+  
+}
+
+@keyframes bounce-text{
+
+  10%, 90%{
+
+    transform: scale(1.03)
+
+  }
+  20%, 80%{
+    transform: scale(1.06)
+
+
+  }
+  30%, 70%{
+    transform: scale(1.09)
+
+
+  }
+  40%, 60%{
+    transform: scale(1.12)
+
+
+  }
+  50%{
+    transform: scale(1.16)
+
+
+  }
+}
+#arrows{
+  z-index: 15;
+  animation: bounce-text 1.4s infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 2.5s;
+}
+.box>*{
+  color: black;
+}
+#about{
+  background-color:#ffffff;
+
+}
+#test::after{
+  content: " ";
+  width: 100%;
+  height: 370px;
+  bottom:-18rem;
+  position:absolute;
+  background-image: linear-gradient(to right,#23ffff,#c0ffff);
+  transform: skewY(-5deg);
+}
+@media screen and (max-width: 1023px) {
+  #about-me{
+    text-align: center !important;
+    padding:0 !important;
+  }
+}
+#submit-button{
+  background-image: linear-gradient(to right, #3377ff, #725aff );
+>>>>>>> parent of f66dbb4 (added target blank to a tags so opens in new tab)
   color: white;
   font-family: var(--title-font);
   padding-bottom: 1rem;
